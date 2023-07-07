@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "eslint": "^8.44.0"
+  }
+}
