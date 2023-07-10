@@ -4,13 +4,19 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="main.css")
+    link(rel="stylesheet", href="./main.css")
     title Bookshop
   body 
     .wrapper 
-      header(class="header")
-        h3 adfasdf
-      
-      body 
+      header.header
+        .logo Bookshop
 
-      footer 
+        - var linkList = ["books", "audiobooks", "Stationery & gifts", "blog"]
+        ul.link-wrapper 
+          each item in linkList
+            li.link-wrapper__item
+              a(href="#")= item
+
+
+     
+       
