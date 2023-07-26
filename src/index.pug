@@ -7,16 +7,61 @@ html(lang="en")
     link(rel="stylesheet", href="./main.css")
     title Bookshop
   body 
-    .wrapper 
-      header.header
-        .logo Bookshop
+    header.header
+      .wrapper 
+        .header-wrapper
+          .logo Bookshop
 
-        - var linkList = ["books", "audiobooks", "Stationery & gifts", "blog"]
-        ul.link-wrapper 
-          each item in linkList
-            li.link-wrapper__item
-              a(href="#")= item
-
-
-     
+          - var linkList = [ "books", "audiobooks", "Stationery & gifts", "blog" ]
        
+          ul.link-wrapper 
+            each item in linkList
+              li.link-wrapper__item
+                a(href="#")= item
+
+          - var iconLinkList = [ '../src/image/icon/user.svg', '../src/image/icon/search.svg', '../src/image/icon/shop_bag.svg' ]
+        
+          .icon-wrapper 
+            each link in iconLinkList 
+              img(src=link).icon-wrapper__item
+            .bag-count 
+    
+      main.main 
+        .wrapper 
+          .slider-wrapper 
+            .slider
+              img(src="../src/image/slider/banner_1.jpg", alt="")
+            .slider-page-wrapper
+              img(src="../src/image/other/dot_page.png", alt="." class=("slider-page-item dot-page-disable"))
+              img(src="../src/image/other/dot_page.png", alt="." class=("slider-page-item dot-page-disable"))
+              img(src="../src/image/other/dot_page.png", alt="." class=("slider-page-item dot-page-disable"))
+            .stiker-1 
+              span(class="stiker-text") Change old book on new
+              img(class="stiker-arrow")(src="../src/image/slider/arrow_stiker.svg", alt="")
+            .stiker-2 
+              span(class="stiker-text") top 100 books 2022
+              img(class="stiker-arrow")(src="../src/image/slider/arrow_stiker.svg", alt="")
+          .main-content-wrapper
+            .card-wrapper 
+            button(class="btn card-btn") load more
+          
+
+    .sidebar 
+      .wrapper
+        ul.sidebar-wrapper 
+          li(class="sidebar-wrapper__item active") Architecture
+          li(class="sidebar-wrapper__item") Art & Fashion
+          li(class="sidebar-wrapper__item") Biography
+          li(class="sidebar-wrapper__item") Business
+          li(class="sidebar-wrapper__item") Crafts & Hobbies
+          li(class="sidebar-wrapper__item") Drama
+          li(class="sidebar-wrapper__item") Fiction
+          li(class="sidebar-wrapper__item") Food & Drink
+          li(class="sidebar-wrapper__item") Health & Wellbeing
+          li(class="sidebar-wrapper__item") History & Politics
+          li(class="sidebar-wrapper__item") Humor
+          li(class="sidebar-wrapper__item") Poetry
+          li(class="sidebar-wrapper__item") Psychology
+          li(class="sidebar-wrapper__item") Science
+          li(class="sidebar-wrapper__item") Technology
+          li(class="sidebar-wrapper__item") Travel & Maps   
